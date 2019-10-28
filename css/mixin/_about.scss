@@ -1,0 +1,49 @@
+.about {
+    background-color: lighten($black, 80);
+    display: flex;
+    float: left;
+    flex-direction: column;
+    h3 {
+        padding-left: 2rem;
+        padding-top: 3rem;
+        @include font-style(5px);
+        color: lighten($black, 50);
+        font-weight: lighter;
+    }
+    h1 {
+        padding-left: 2rem;
+        @include font-style(30px);
+    }
+    h5 {
+        font-family: 'Pinyon Script', cursive;
+        font-size: 1.5rem;
+        font-weight: ligher;
+        color: lighten($black, 20);
+    }
+    .inf {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
+    }
+    p {
+        padding: 1rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        // justify-content: space-between;
+        justify-items: left;
+        display: inline-block;
+        .btn {
+            padding: 1rem;
+            margin-right: 1rem;
+            @include font-style(0.5rem);
+            border: solid 2px lighten($black, 65);
+            color: lighten($blue, 40);
+            background-color: lightslategrey;
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

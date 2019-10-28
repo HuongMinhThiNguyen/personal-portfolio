@@ -1,0 +1,11 @@
+@mixin item-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font-style($font-size) {
+    font-family: 'Stardos Stencil', cursive;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
