@@ -1,0 +1,27 @@
+        .abilities {
+            background-image: url(../image/bgtest.jpg);
+            // background-color: lighten($black, 80);
+            // background-color: rgb(202, 231, 240);
+            display: flex;
+            float: left;
+            flex-direction: column;
+            margin: 2rem;
+            .row {
+                display: flex;
+                .col {
+                    flex: 50%;
+                    .skill {
+                        border-bottom: 2px solid green;
+                    }
+                }
+            }
+            h3 {
+                @include font-style(1rem);
+                color: lighten($black, 50);
+                font-weight: lighter;
+            }
+            h1 {
+                // padding-left: 1rem;
+                @include font-style(1.5rem);
+            }
+        }

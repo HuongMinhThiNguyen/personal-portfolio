@@ -1,24 +1,25 @@
 .about {
     background-color: lighten($black, 80);
+    // background-color: rgb(202, 231, 240);
     display: flex;
     float: left;
     flex-direction: column;
     h3 {
-        padding-left: 2rem;
-        padding-top: 3rem;
-        @include font-style(5px);
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        @include font-style(1rem);
         color: lighten($black, 50);
         font-weight: lighter;
     }
     h1 {
-        padding-left: 2rem;
-        @include font-style(30px);
+        padding-left: 1rem;
+        @include font-style(1.5rem);
     }
     h5 {
-        font-family: 'Pinyon Script', cursive;
-        font-size: 1.5rem;
+        font-family: 'Courgette', cursive;
+        font-size: 1rem;
         font-weight: ligher;
-        color: lighten($black, 20);
+        color: lighten($black, 40);
     }
     .inf {
         display: grid;
@@ -29,15 +30,24 @@
     }
     .row {
         display: flex;
-        flex-direction: row;
+        //flex-direction: column;
         padding: 2rem;
         // justify-content: space-between;
         justify-items: left;
-        display: inline-block;
+        .left {
+            padding: 1rem;
+            flex: 1 1 30%;
+            //background-color: red;
+        }
+        .right {
+            flex: 1 1 70%;
+            //background-color: green;
+        }
         .btn {
+            display: inline-block;
             padding: 1rem;
             margin-right: 1rem;
-            @include font-style(0.5rem);
+            @include font-style(1rem);
             border: solid 2px lighten($black, 65);
             color: lighten($blue, 40);
             background-color: lightslategrey;

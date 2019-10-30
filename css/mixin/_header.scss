@@ -1,6 +1,6 @@
 //start for header
 header {
-    background-image: url('./image/background.jpg');
+    background-image: url('./image/bgHeader1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,11 +16,12 @@ header {
     h1 {
         @include font-style(3rem);
         font-weight: lighter;
+        color: goldenrod;
     }
     h3 {
         font-family: 'Pinyon Script', cursive;
         font-size: 2rem;
         font-weight: ligher;
-        color: lighten($black, 10);
+        color: whitesmoke;
     }
 }
