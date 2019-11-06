@@ -1,13 +1,13 @@
         .abilities {
-            background-image: url(../image/bgtest.jpg);
-            // background-color: lighten($black, 80);
-            // background-color: rgb(202, 231, 240);
+            background-color: lighten(blue, 50);
+            width: 100%;
+            height: auto;
+            padding: 1.5rem;
             display: flex;
-            float: left;
             flex-direction: column;
-            margin: 2rem;
             .row {
                 display: flex;
+                padding-bottom: 1rem;
                 .col {
                     flex: 50%;
                     .skill {
@@ -16,12 +16,72 @@
                 }
             }
             h3 {
-                @include font-style(1rem);
-                color: lighten($black, 50);
-                font-weight: lighter;
+                @include font-style-h3(lighten($black, 50));
             }
             h1 {
                 // padding-left: 1rem;
-                @include font-style(1.5rem);
+                @include font-style-h1($black);
+            }
+            p {
+                padding-bottom: 1rem;
+                margin-right: 3rem;
+            }
+        }
+        
+        .bar {
+            width: 100%;
+            background-color: lighten($black, 70);
+            margin: 10px;
+        }
+        
+        .skills {
+            text-align: right;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            color: whitesmoke;
+        }
+        
+        .css {
+            width: 60%;
+            background-color: rgb(27, 119, 126);
+        }
+        
+        .js {
+            width: 60%;
+            background-color: darken(orange, 10);
+        }
+        
+        .php {
+            width: 40%;
+            background-color: darken(yellow, 10);
+        }
+        
+        .spss {
+            width: 70%;
+            background-color: darken(rgb(9, 255, 0), 30);
+        }
+        
+        .nvivo {
+            width: 80%;
+            background-color: darken(rgb(255, 208, 0), 30);
+        }
+        
+        .management {
+            width: 80%;
+            background-color: darken(rgba(255, 81, 0, 0.726), 10%);
+        }
+        
+        .training {
+            width: 90%;
+            background-color: darken(rgb(255, 251, 0), 25);
+        }
+        
+        .scale {
+            transition: 1s ease all;
+            p {
+                padding-right: 2rem;
+                font-family: 'Oswald', sans-serif;
+                font-size: 1rem;
+                color: darken($blue, 40);
             }
         }

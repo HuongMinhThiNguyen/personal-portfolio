@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pinyon+Script|Stardos+Stencil&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <title>My Portfolio</title>
 </head>
@@ -38,6 +40,9 @@
                     </li>
                     <li>
                         <a href="#">skills</a>
+                    </li>
+                    <li>
+                        <a href="#">Reference</a>
                     </li>
                     <li>
                         <a href="#">contact</a>
@@ -145,39 +150,141 @@
 
             <section class="abilities">
                 <h3>abilities</h3>
-                <h1>my skills</h1>
+                <h1>Skills</h1>
                 <div class="row">
                     <div class="col">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae deleniti eaque eveniet nesciunt hic ducimus accusantium fuga, incidunt corrupti enim at nostrum vitae tenetur itaque, ipsum nobis? Nam, unde! Eius.</p>
                     </div>
                     <div class="col scale">
-                        <div class="skills">FRONT-END: HTML, CSS, JQUERY,...</div>
-                        <div class="skills">BACK-END: MYSQL, PYTHON, ...</div>
-                        <div class="skills">Data analysis: SPSS </div>
-                        <div class="skills">Project Management: </div>
-                        <div class="skills"></div>
+                        <p>HTML & CSS</p>
+                        <div class="bar">
+                            <div class="skills css">60%</div>
+                        </div>
+
+                        <p>Javascript, JQuery</p>
+                        <div class="bar">
+                            <div class="skills js">60%</div>
+                        </div>
+
+                        <p>MySQL, Python, PHP,...</p>
+                        <div class="bar">
+                            <div class="skills php">40%</div>
+                        </div>
+
+                        <p>Quantitative Data analysis (SPSS)</p>
+                        <div class="bar">
+                            <div class="skills spss">70%</div>
+                        </div>
+
+                        <p>Qualitative data analysis (Nvivo)</p>
+                        <div class="bar">
+                            <div class="skills nvivo">80%</div>
+                        </div>
+
+                        <p>Project management</p>
+                        <div class="bar">
+                            <div class="skills management">80%</div>
+                        </div>
+
+                        <p>Training skills</p>
+                        <div class="bar">
+                            <div class="skills training">90%</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+            <!-- start section References -->
+
+            <section class="reference">
+                <h3>my reference</h3>
+                <h1>References</h1>
+                <div class="row">
+                    <div class="team">
+                        <img class="ref-photo" src="https://source.unsplash.com/350x350/?girl" alt="portrait">
+                        <div class="overlay">
+                            <h3>Name</h3>
+                            <span>contact inf: title, email address,...</span>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <img class="ref-photo" src="https://source.unsplash.com/350x350/?girl" alt="portrait">
+                        <div class="overlay">
+                            <h3>Name</h3>
+                            <span>contact inf: title, email address,...</span>
+                        </div>
+                    </div>
+                    <div class="team">
+                        <img class="ref-photo" src="https://source.unsplash.com/350x350/?girl" alt="portrait">
+                        <div class="overlay">
+                            <h3>Name</h3>
+                            <span>contact inf: title, email address,...</span>
+                        </div>
                     </div>
                 </div>
 
             </section>
 
-            <!-- start section Portfolio -->
-
-            <section class="portfolio">
-
-
-            </section>
-
             <!-- start section Contact -->
 
-            <section class="contact">
+            <section class="contactMe">
+                <h3>Location</h3>
+                <h1>Contact Me</h1>
+                <div class="row">
+                    <!-- Contact Infor -->
+                    <div class="col left">
+                        <h5>Nguyen T. M. Huong</h5>
+                        <p><strong>PHONE:</strong> +32 497 46 46 64</p>
+                        <p><strong>EMAIL:</strong> mhuong_1999@yahoo.com</p>
+                        <p><strong>ADDRESS:</strong> <br> Molenbergstraat 72,
+                            <br> 9340 Lede
+                            <br> Belgium</p>
+                    </div>
+                    <!-- contact form -->
+                    <div class="col right">
+                        <h5>Get in touch</h5>
+                        <form action="post">
+                            <div class="row">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn" type="submit">Send me</button>
+                            </div>
 
-
+                        </form>
+                    </div>
+                </div>
             </section>
 
             <!-- start section Footer here -->
             <footer>
-
+                <div class="row">
+                    <div class="col">© 2019 All rights reserved</div>
+                    <div class="col">
+                        <h1> Huong T. M. Nguyen</h1>
+                        <h3>Web developer </h3>
+                    </div>
+                    <div class="col">
+                        <ul class="social-network">
+                            <li><a href="#"><i class="ti-facebook font-14px black-icon"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter-alt font-14px black-icon"></i></a></li>
+                            <li><a href="#"><i class="ti-instagram font-14px black-icon"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin font-14px black-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </footer>
         </main>
     </div>

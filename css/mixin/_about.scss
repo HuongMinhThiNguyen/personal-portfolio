@@ -1,25 +1,22 @@
 .about {
-    background-color: lighten($black, 80);
+    padding: 2rem;
+    background: lighten(rgb(236, 241, 161), 10);
     // background-color: rgb(202, 231, 240);
+    // background-image: url('/css/image/moutain.jpg');
+    // background-size: cover;
+    // background-position: center;
     display: flex;
     float: left;
     flex-direction: column;
     h3 {
-        padding-left: 1rem;
-        padding-top: 0.5rem;
-        @include font-style(1rem);
-        color: lighten($black, 50);
-        font-weight: lighter;
+        @include font-style-h3(lighten($black, 50));
     }
     h1 {
-        padding-left: 1rem;
-        @include font-style(1.5rem);
+        @include font-style-h1($black);
     }
     h5 {
-        font-family: 'Courgette', cursive;
-        font-size: 1rem;
-        font-weight: ligher;
-        color: lighten($black, 40);
+        @include font-text(lighten($black, 20));
+        line-height: 2rem;
     }
     .inf {
         display: grid;
@@ -31,7 +28,7 @@
     .row {
         display: flex;
         //flex-direction: column;
-        padding: 2rem;
+        padding-right: 2rem;
         // justify-content: space-between;
         justify-items: left;
         .left {
@@ -44,6 +41,7 @@
             //background-color: green;
         }
         .btn {
+            cursor: pointer;
             display: inline-block;
             padding: 1rem;
             margin-right: 1rem;

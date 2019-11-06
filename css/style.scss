@@ -131,6 +131,11 @@ $yellow: rgb(250, 214, 10);
 // #page {
 //     transform: translate3d(400px, 0, 0);
 // }
+@import './mixin/reference';
+//start with section References
+@import'./mixin/contactMe';
+// start for section Contact Me
+@import'./mixin/footer';
 @media screen and (max-width: 600px) {
     #page {
         border: 2px solid hotpink;

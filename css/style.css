@@ -176,14 +176,19 @@ header h1 {
 }
 
 header h3 {
-  font-family: 'Pinyon Script', cursive;
-  font-size: 2rem;
-  font-weight: ligher;
   color: whitesmoke;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  line-height: 2rem;
 }
 
 .about {
-  background-color: gainsboro;
+  padding: 2rem;
+  background: #f5f8cd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,27 +200,32 @@ header h3 {
 }
 
 .about h3 {
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  font-family: 'Stardos Stencil', cursive;
-  text-transform: uppercase;
-  font-size: 1rem;
   color: #909090;
-  font-weight: lighter;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
 }
 
 .about h1 {
-  padding-left: 1rem;
-  font-family: 'Stardos Stencil', cursive;
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-size: 1.5rem;
 }
 
 .about h5 {
-  font-family: 'Courgette', cursive;
-  font-size: 1rem;
-  font-weight: ligher;
-  color: #767676;
+  color: #434343;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
 }
 
 .about .inf {
@@ -233,7 +243,7 @@ header h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2rem;
+  padding-right: 2rem;
   justify-items: left;
 }
 
@@ -251,6 +261,7 @@ header h3 {
 }
 
 .about .row .btn {
+  cursor: pointer;
   display: inline-block;
   padding: 1rem;
   margin-right: 1rem;
@@ -267,22 +278,24 @@ header h3 {
 }
 
 .abilities {
-  background-image: url(../image/bgtest.jpg);
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2rem;
 }
 
 .abilities .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .abilities .row .col {
@@ -296,16 +309,275 @@ header h3 {
 }
 
 .abilities h3 {
-  font-family: 'Stardos Stencil', cursive;
-  text-transform: uppercase;
-  font-size: 1rem;
   color: #909090;
-  font-weight: lighter;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
 }
 
 .abilities h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.abilities p {
+  padding-bottom: 1rem;
+  margin-right: 3rem;
+}
+
+.bar {
+  width: 100%;
+  background-color: #c3c3c3;
+  margin: 10px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: whitesmoke;
+}
+
+.css {
+  width: 60%;
+  background-color: #1b777e;
+}
+
+.js {
+  width: 60%;
+  background-color: #cc8400;
+}
+
+.php {
+  width: 40%;
+  background-color: #cccc00;
+}
+
+.spss {
+  width: 70%;
+  background-color: #046600;
+}
+
+.nvivo {
+  width: 80%;
+  background-color: #665300;
+}
+
+.management {
+  width: 80%;
+  background-color: rgba(204, 65, 0, 0.726);
+}
+
+.training {
+  width: 90%;
+  background-color: #807e00;
+}
+
+.scale {
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.scale p {
+  padding-right: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: #3d6767;
+}
+
+.reference {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f5f8cd;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.reference .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.reference .row .team {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.reference .row .ref-photo {
+  border: 2px solid darkgray;
+  width: 20vw;
+  height: auto;
+  max-width: 30vw;
+}
+
+.reference .row .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.5rem;
+  background: black;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: .5s ease-in opacity;
+  transition: .5s ease-in opacity;
+}
+
+.reference .row .team:hover .overlay {
+  opacity: 0.8;
+}
+
+.reference h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.reference h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.contactMe {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.contactMe h3 {
+  color: #909090;
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+}
+
+.contactMe h1 {
+  color: #101010;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.contactMe .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contactMe h5 {
+  color: darkcyan;
+  color: #005858;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.contactMe .left p {
+  margin: 2rem;
+  color: #1d2410;
+  font-weight: 500;
+}
+
+.contactMe .right .form-control {
+  width: 90%;
+  border: none;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: darkgray solid 1px;
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 0.9rem;
+}
+
+.contactMe .right input:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.contactMe .right textarea {
+  width: 100%;
+}
+
+.contactMe .right textarea:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.contactMe .btn {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1.5rem;
   font-family: 'Stardos Stencil', cursive;
   text-transform: uppercase;
+  font-size: 0.7rem;
+  border: solid 2px #b6b6b6;
+  background-color: #005858;
+  color: whitesmoke;
+}
+
+.contactMe .btn:hover {
+  color: yellow;
+}
+
+footer {
+  background-image: url("/css/image/bgFooter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 30vh;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+  color: goldenrod;
+}
+
+footer h1 {
+  font-family: 'Stardos Stencil', cursive;
+  text-transform: uppercase;
+  font-size: gold;
   font-size: 1.5rem;
 }
 

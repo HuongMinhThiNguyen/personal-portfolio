@@ -1,0 +1,23 @@
+footer {
+    background-image: url('/css/image/bgFooter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+    // flex-direction: column;
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2rem;
+        color: goldenrod;
+    }
+    h1 {
+        @include font-style (gold);
+        font-size: 1.5rem;
+    }
+    h3 {
+        @include font
+    }
+}

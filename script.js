@@ -5,11 +5,9 @@ $(document).ready(function() {
         $(".mobile-menu").toggleClass("open");
         if ($(".mobile-menu").hasClass("open")) {
             $widthMenu = $(".mobile-menu").width();
-            $("main").css("transform", "translateX($widthMenu)");
+            $("main").css("transform", "translateX(260px)");
         } else {
             $("main").css("transform", "");
-
-
         }
     });
 });

@@ -1,0 +1,67 @@
+        .contactMe {
+            width: 100%;
+            height: auto;
+            background-color: lighten(blue, 50);
+            padding: 1.5rem;
+            h3 {
+                @include font-style-h3(lighten($black, 50));
+            }
+            h1 {
+                @include font-style-h1($black);
+            }
+            .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            h5 {
+                color: darkcyan;
+                @include font-text( darken( darkcyan, 10));
+                font-size: 2rem;
+            }
+            .left {
+                p {
+                    margin: 2rem;
+                    color: darken( darkolivegreen, 20);
+                    font-weight: 500;
+                }
+            }
+            .right {
+                //  ::placeholder {
+                //     color: darkslateblue;
+                //     font-size: 0.8rem;
+                //     font-weight: 400;
+                // }
+                .form-control {
+                    width: 90%;
+                    border: none;
+                    margin-top: 3rem;
+                    padding-bottom: 2rem;
+                    border-bottom: lighten($black, 60) solid 1px;
+                    font-family: 'Stardos Stencil', cursive;
+                    font-size: 0.9rem;
+                }
+                input:focus {
+                    border-bottom: 2px solid black;
+                    outline: none;
+                }
+                textarea {
+                    width: 100%;
+                }
+                textarea:focus {
+                    border-bottom: 2px solid black;
+                    outline: none;
+                }
+            }
+            .btn {
+                cursor: pointer;
+                padding: 1rem;
+                margin: 1.5rem;
+                @include font-style(.7rem);
+                border: solid 2px lighten($black, 65);
+                background-color: (darken( darkcyan, 10));
+                color: whitesmoke;
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }

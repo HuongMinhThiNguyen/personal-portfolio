@@ -19,9 +19,13 @@ header {
         color: goldenrod;
     }
     h3 {
-        font-family: 'Pinyon Script', cursive;
-        font-size: 2rem;
-        font-weight: ligher;
-        color: whitesmoke;
+        @include font-text(whitesmoke);
+        font-size: 2.5rem;
+        font-weight: lighter;
+        line-height: 2rem;
+        // font-family: 'Pinyon Script', cursive;
+        // font-size: 2rem;
+        // font-weight: ligher;
+        // color: whitesmoke;
     }
 }
