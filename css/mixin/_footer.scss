@@ -12,6 +12,18 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 2rem;
         color: goldenrod;
+        .col {
+            justify-content: space-around;
+            margin: 0 auto;
+            padding: 1rem;
+            p {
+                padding: 1rem;
+            }
+            a {
+                color: goldenrod;
+                letter-spacing: 0.7rem;
+            }
+        }
     }
     h1 {
         @include font-style (gold);

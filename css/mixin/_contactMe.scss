@@ -23,6 +23,9 @@
                     margin: 2rem;
                     color: darken( darkolivegreen, 20);
                     font-weight: 500;
+                    line-height: 1.5rem;
+                    font-size: 1rem;
+                    font-family: 'Stardos Stencil', cursive;
                 }
             }
             .right {
@@ -38,7 +41,9 @@
                     padding-bottom: 2rem;
                     border-bottom: lighten($black, 60) solid 1px;
                     font-family: 'Stardos Stencil', cursive;
-                    font-size: 0.9rem;
+                    font-size: 1rem;
+                    font-style: oblique;
+                    font-weight: bold;
                 }
                 input:focus {
                     border-bottom: 2px solid black;
@@ -56,7 +61,7 @@
                 cursor: pointer;
                 padding: 1rem;
                 margin: 1.5rem;
-                @include font-style(.7rem);
+                @include font-style(.8rem);
                 border: solid 2px lighten($black, 65);
                 background-color: (darken( darkcyan, 10));
                 color: whitesmoke;

@@ -44,13 +44,13 @@
             cursor: pointer;
             display: inline-block;
             padding: 1rem;
-            margin-right: 1rem;
-            @include font-style(1rem);
+            margin: 1.5rem;
+            @include font-style(.8rem);
             border: solid 2px lighten($black, 65);
-            color: lighten($blue, 40);
-            background-color: lightslategrey;
+            background-color: (darken( darkcyan, 5));
+            color: whitesmoke;
             &:hover {
-                color: $black;
+                color: yellow;
             }
         }
     }

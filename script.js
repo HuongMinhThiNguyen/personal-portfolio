@@ -10,4 +10,12 @@ $(document).ready(function() {
             $("main").css("transform", "");
         }
     });
+
+    $(".abilities").mouseenter(function() {
+        $('.scale').css('width', '150%');
+        $(".abilities").mouseleave(function() {
+            $('.scale').css('width', '');
+        });
+
+    });
 });
