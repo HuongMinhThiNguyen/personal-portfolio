@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +60,12 @@
   position: absolute;
   margin: 0 auto;
   bottom: 0px;
+}
+
+#page aside .social a {
+  text-decoration: none;
+  color: #1a1a00;
+  letter-spacing: 0.2rem;
 }
 
 .logo span {
@@ -137,6 +147,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.class {
+  -webkit-transform: scale(1.2rem);
+          transform: scale(1.2rem);
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
 }
 
 header {
@@ -299,9 +316,8 @@ header h3 {
 }
 
 .abilities .row .col {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .abilities .row .col .skill {
@@ -592,7 +608,8 @@ footer .row .col p {
 
 footer .row .col a {
   color: goldenrod;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
 }
 
 footer h1 {

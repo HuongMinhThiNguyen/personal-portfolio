@@ -5,6 +5,10 @@
 }
 
 ;
+html {
+    scroll-behavior: smooth;
+}
+
 @import './mixin/mixin.scss';
 $black: #101010;
 $pink: pink;
@@ -53,6 +57,12 @@ $yellow: rgb(250, 214, 10);
             position: absolute;
             margin: 0 auto;
             bottom: 0px;
+            a {
+                text-decoration: none;
+                color: darken(olive, 20);
+                ;
+                letter-spacing: 0.2rem;
+            }
         }
     }
 }
@@ -119,6 +129,11 @@ $yellow: rgb(250, 214, 10);
     flex-direction: column;
     // transform: translateX(400px);
     // .portrait {}
+}
+
+.class {
+    transform: scale(1.2rem);
+    transition: 1s ease all;
 }
 
 // start for Header

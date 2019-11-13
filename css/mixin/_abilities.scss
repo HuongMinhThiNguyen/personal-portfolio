@@ -9,7 +9,7 @@
                 display: flex;
                 padding-bottom: 1rem;
                 .col {
-                    flex: 50%;
+                    flex-basis: 50%;
                     .skill {
                         border-bottom: 2px solid green;
                     }
