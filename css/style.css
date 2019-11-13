@@ -190,6 +190,7 @@ header h1 {
   font-size: 3rem;
   font-weight: lighter;
   color: goldenrod;
+  letter-spacing: 3px;
 }
 
 header h3 {

@@ -17,6 +17,7 @@ header {
         @include font-style(3rem);
         font-weight: lighter;
         color: goldenrod;
+        letter-spacing: 3px;
     }
     h3 {
         @include font-text(whitesmoke);

@@ -9,6 +9,10 @@ $(document).ready(function() {
         } else {
             $("main").css("transform", "");
         }
+        // $(this).animate({ 'zoom': 1.3 }, 400);
+
+        // $(".mobile-menu").fadeToggle(1000);
+
     });
     // make the skill bar bigger when the mouse moves 
     $(".abilities").mouseenter(function() {
